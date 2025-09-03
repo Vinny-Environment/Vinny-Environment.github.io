@@ -10,7 +10,7 @@ Description for project, info about updates, articles and etc
 ## Plugins
 
 * `VinnyRengaAdapter` (https://github.com/Vinny-Environment/VinnyRengaAdapter): plugin for Renga;
-* `VinnyRengaAdapter` (https://github.com/Vinny-Environment/VinnyNavisworksAdapter): plugin for Autodesk Navisworks; 
+* `VinnyNavisworksAdapter` (https://github.com/Vinny-Environment/VinnyNavisworksAdapter): plugin for Autodesk Navisworks; 
 
 ## Auxiliary-components
 
