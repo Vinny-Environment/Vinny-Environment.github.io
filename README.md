@@ -1,17 +1,40 @@
 # Vinny-Environment.github.io
-Description for project, info about updates, articles and etc
 
-# About repositories
+Описание проекта
 
-## Kernel-componenets
+# Обзор репозиториев
 
-* `VinnyLibConverter` (https://github.com/Vinny-Environment/VinnyLibConverter): the main project, describe abstract structure of data, contains all exchange-data formats-libraries and common converter as library and CLI-app;
+## Основные компоненты
 
-## Plugins
+* `VinnyLibConverter` (https://github.com/Vinny-Environment/VinnyLibConverter): основной проект, библиотека для преобразования между обменными форматами данных;
 
-* `VinnyRengaAdapter` (https://github.com/Vinny-Environment/VinnyRengaAdapter): plugin for Renga;
-* `VinnyNavisworksAdapter` (https://github.com/Vinny-Environment/VinnyNavisworksAdapter): plugin for Autodesk Navisworks; 
+## Плагины к ПО
 
-## Auxiliary-components
+* `VinnyRengaAdapter` (https://github.com/Vinny-Environment/VinnyRengaAdapter): плагин для Renga (8.8);
+* `VinnyNavisworksAdapter` (https://github.com/Vinny-Environment/VinnyNavisworksAdapter): плагин для Autodesk Navisworks (2021); 
 
-* `nwcreate2swig` (https://github.com/Vinny-Environment/nwcreate2swig): the custom SWIG-based wrapper of Autodesk NWcreate library in C/C++ to .NET. Using in `VinnyLibConverter` for write in `.nwc`- data format;
+Плагины имеют одинаковый принцип работы - доступен запуск окна настроек параметров импорта и\или экспорта в один из обменных форматов. 
+
+Информация об установке плагинов, особенности использования приведены в README.md соответствующего репозитория.
+
+## Вспомогательные компоненты
+
+* `nwcreate2swig` (https://github.com/Vinny-Environment/nwcreate2swig): пользовательская обёртка библиотеки Autodesk NWcreate (оригинальное C/C++ API) для .NET. Используется в составе `VinnyLibConverter` для записи данных в формат NWC;
+
+# Доступные возможности
+
+| Формат                    | Ссылка                                                          | Расширение | Чтение | Запись | Зависимости                                                         |
+| ------------------------- | --------------------------------------------------------------- | ---------- | ------ | ------ | ------------------------------------------------------------------- |
+| DotBIM                    | [Click](https://dotbim.net/)                                    | .bim       | ✅      | ✅      | dotBIM nuget                                                        |
+| Топоматик SMDX            | [Click](http://smdx.info/)                                      | .smdx      | ✅ (1)  | ✅      | -                                                                   |
+| Autodesk Navisworks Cache | [Click](https://aps.autodesk.com/developer/overview/navisworks) | .nwc       | ❌      | ✅      | [nwcreate2swig](https://github.com/Vinny-Environment/nwcreate2swig) |
+|                           |                                                                 |            |        |        |                                                                     |
+|                           |                                                                 |            |        |        |                                                                     |
+|                           |                                                                 |            |        |        |                                                                     |
+|                           |                                                                 |            |        |        |                                                                     |
+|                           |                                                                 |            |        |        |                                                                     |
+|                           |                                                                 |            |        |        |                                                                     |
+
+Примечания:
+
+1: ограниченная реализация чтения геометрии, игнорируются конструкции, имеющие в insertions интерполяцию, также ограничено чтение свойств (эффект "наследования" свойств в SMDX);
