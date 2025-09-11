@@ -11,7 +11,8 @@
 ## Плагины к ПО
 
 * `VinnyRengaAdapter` (https://github.com/Vinny-Environment/VinnyRengaAdapter): плагин для Renga (8.8);
-* `VinnyNavisworksAdapter` (https://github.com/Vinny-Environment/VinnyNavisworksAdapter): плагин для Autodesk Navisworks (2021); 
+* `VinnyNavisworksAdapter` (https://github.com/Vinny-Environment/VinnyNavisworksAdapter): плагин для Autodesk Navisworks (2021);
+* `VinnyCADLibAdapter` (https://github.com/Vinny-Environment/VinnyCADLibAdapter): плагин для CSoft CADLib: Модель и Архив; 
 
 Плагины имеют одинаковый принцип работы - доступен запуск окна настроек параметров импорта и\или экспорта в один из обменных форматов. Подробнее об окне см. справку к библиотеке `VinnyLibConverter`;
 
