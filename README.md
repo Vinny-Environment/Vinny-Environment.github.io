@@ -18,6 +18,16 @@
 
 Информация об установке плагинов, особенности использования приведены в README.md соответствующего репозитория.
 
+| Название среды | Импорт | Экспорт | Комментарий                          |
+| -------------- | ------ | ------- | ------------------------------------ |
+| Renga          | ❌      | ✅       |                                      |
+| Navisworks     | ❌      | ✅       | для импорта используйте запись в NWC |
+| CADLib         | ✅      | ❌(1)    |                                      |
+
+Примечания:
+
+1: фактически, экспорт не рабочий - не удается сохранить структуру, не удается получить корректную геометрию;
+
 ## Вспомогательные компоненты
 
 * `nwcreate2swig` (https://github.com/Vinny-Environment/nwcreate2swig): пользовательская обёртка библиотеки Autodesk NWcreate (оригинальное C/C++ API) для .NET. Используется в составе `VinnyLibConverter` для записи данных в формат NWC;
@@ -29,12 +39,6 @@
 | DotBIM                    | [Click](https://dotbim.net/)                                    | .bim       | ✅      | ✅      | dotBIM nuget                                                        |
 | Топоматик SMDX            | [Click](http://smdx.info/)                                      | .smdx      | ✅ (1)  | ✅      | -                                                                   |
 | Autodesk Navisworks Cache | [Click](https://aps.autodesk.com/developer/overview/navisworks) | .nwc       | ❌      | ✅      | [nwcreate2swig](https://github.com/Vinny-Environment/nwcreate2swig) |
-|                           |                                                                 |            |        |        |                                                                     |
-|                           |                                                                 |            |        |        |                                                                     |
-|                           |                                                                 |            |        |        |                                                                     |
-|                           |                                                                 |            |        |        |                                                                     |
-|                           |                                                                 |            |        |        |                                                                     |
-|                           |                                                                 |            |        |        |                                                                     |
 
 Примечания:
 
