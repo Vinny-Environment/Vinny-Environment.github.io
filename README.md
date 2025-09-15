@@ -31,6 +31,7 @@
 ## Вспомогательные компоненты
 
 * `nwcreate2swig` (https://github.com/Vinny-Environment/nwcreate2swig): пользовательская обёртка библиотеки Autodesk NWcreate (оригинальное C/C++ API) для .NET. Используется в составе `VinnyLibConverter` для записи данных в формат NWC;
+* `VinnyProjTransformation` (https://github.com/Vinny-Environment/VinnyProjTransformation): пользовательская обёртка библиотеки OSGeo PROJ (оригинальное C API) для .NET. Используется как внешняя зависимость библиотеки `VinnyLibConverterCommon` для реализации геодеических преобразований координат;
 
 # Доступные возможности
 
